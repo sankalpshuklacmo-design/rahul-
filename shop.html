@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — Pandey's Real Taste</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Free delivery above ₹499</span><span>COD available</span></div></div>
+  <header class="site">
+    <div class="container nav">
+      <a class="logo" href="index.html">Pandey's <span>Real Taste</span></a>
+      <button class="menu-toggle" onclick="toggleNav()">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Our kitchen</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cart-btn" href="cart.html">Basket <b data-cart-count>0</b></a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow">The pantry</p>
+      <div class="section-head"><h2>Pickles, masalas & groceries</h2></div>
+      <div class="shop-layout">
+        <aside class="filters">
+          <input class="search" id="search" type="search" placeholder="Search achar, haldi, dal…" />
+          <h3>Category</h3>
+          <label><input class="f-cat" type="checkbox" value="pickles"> Pickles</label>
+          <label><input class="f-cat" type="checkbox" value="spices"> Spices</label>
+          <label><input class="f-cat" type="checkbox" value="groceries"> Groceries</label>
+        </aside>
+        <div class="grid" id="shop-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="copy">© 2026 Pandey's Real Taste · <a href="index.html">Home</a></div>
+    </div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>

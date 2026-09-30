@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pandey's Real Taste — Pickles, Spices & Groceries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Free delivery on orders above ₹499 · Pan-India shipping</span>
+      <span>Homemade pickles · Freshly milled masalas</span>
+    </div>
+  </div>
+  <header class="site">
+    <div class="container nav">
+      <a class="logo" href="index.html">Pandey's <span>Real Taste</span></a>
+      <button class="menu-toggle" onclick="toggleNav()">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?cat=pickles">Pickles</a>
+        <a href="shop.html?cat=spices">Spices</a>
+        <a href="about.html">Our kitchen</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cart-btn" href="cart.html">Basket <b data-cart-count>0</b></a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow" style="color:#e8d48b">From our kitchen to yours</p>
+      <h1>Pickles, spices & groceries with Pandey's real taste.</h1>
+      <p>Sun-cured achars, small-batch masalas and pantry staples from the Pandey kitchen — no shortcuts, no mystery powders.</p>
+      <a class="btn" href="shop.html">Shop the pantry</a>
+      <a class="btn ghost" href="about.html">How we make it</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="eyebrow">Shop by aisle</p>
+      <div class="section-head"><h2>What are you stocking today?</h2></div>
+      <div class="cats">
+        <a class="cat" href="shop.html">
+          <img src="images/mango-pickle.jpg" alt="Pickles">
+          <div><h3>Pickles & Achar</h3><p>Mango, mixed veg, lemon, garlic.</p></div>
+        </a>
+        <a class="cat" href="shop.html">
+          <img src="images/category-spices.jpg" alt="Spices">
+          <div><h3>Whole & ground spices</h3><p>Haldi, mirch, garam masala, jeera.</p></div>
+        </a>
+        <a class="cat" href="shop.html">
+          <img src="images/basmati.jpg" alt="Groceries">
+          <div><h3>Groceries</h3><p>Rice, dal, atta, oil, jaggery, tea.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Bestsellers</p>
+          <h2>From this week’s kitchen</h2>
+        </div>
+        <a class="btn" href="shop.html">See all</a>
+      </div>
+      <div class="grid" id="featured"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container story">
+      <img src="images/garam-masala.jpg" alt="Spice kitchen">
+      <div>
+        <p class="eyebrow">Why Pandey's Real Taste</p>
+        <h2>Recipes that taste like they came from a family steel dabba.</h2>
+        <p>We source mangoes in season, mill spices in small lots, and pack oil and grain so your weekly kirana run can happen from home — without losing the flavour of a trusted neighbourhood store.</p>
+        <div class="badges">
+          <span class="badge">No added colour</span>
+          <span class="badge">Mustard-oil pickles</span>
+          <span class="badge">COD available</span>
+          <span class="badge">Ships in 2–4 days</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="why">
+        <article><h3>Seasonal pickles</h3><p>We bottle when fruit is cheap and ripe — not year-round from cold storage.</p></article>
+        <article><h3>Fresh grind</h3><p>Masalas are roasted and milled in small batches so aroma lasts till the last spoon.</p></article>
+        <article><h3>Fair pantry prices</h3><p>Staples priced like a good kirana, not a boutique hamper.</p></article>
+        <article><h3>Packed to travel</h3><p>Leak-safe jars and sealed pouches for courier and summer heat.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="foot">
+        <div>
+          <div class="logo" style="color:#e8d48b">Pandey's <span>Real Taste</span></div>
+          <p style="margin-top:10px">Pickles, spices and groceries from the Pandey family kitchen.</p>
+        </div>
+        <div>
+          <strong>Shop</strong><br>
+          <a href="shop.html">All products</a><br>
+          <a href="cart.html">Basket</a>
+        </div>
+        <div>
+          <strong>Help</strong><br>
+          <a href="contact.html">WhatsApp / email</a><br>
+          Free shipping over ₹499
+        </div>
+      </div>
+      <div class="copy">© 2026 Pandey's Real Taste. Demo storefront — connect a payment gateway when you go live.</div>
+    </div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
